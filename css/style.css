@@ -1,0 +1,45 @@
+:root {
+  --vinho: #5b1830;
+  --terracota: #b94b32;
+  --ouro: #e7b84b;
+  --creme: #fff8e9;
+  --tinta: #241b18;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--creme); color: var(--tinta); font-family: "Segoe UI", Arial, sans-serif; padding-top: 76px; }
+.navbar { background: rgba(49, 14, 26, .98); box-shadow: 0 3px 14px rgba(0,0,0,.22); }
+.navbar-brand { font-weight: 800; letter-spacing: .03em; }
+.nav-link { font-weight: 600; }
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link:hover { color: var(--ouro); }
+.hero-slide { height: 72vh; min-height: 440px; object-fit: cover; filter: brightness(.55); }
+.carousel-caption { bottom: 20%; text-shadow: 0 2px 8px #000; }
+.carousel-caption h1, .carousel-caption h2 { font-weight: 800; font-size: clamp(2rem, 5vw, 4.4rem); }
+.page-hero { background: linear-gradient(115deg, var(--vinho), #8b2f29); color: white; padding: 5rem 0 4rem; }
+.page-hero h1 { font-weight: 800; }
+.section-title { color: var(--vinho); font-weight: 800; position: relative; padding-bottom: .8rem; }
+.section-title::after { content:""; width: 64px; height: 5px; background: var(--ouro); position:absolute; left:0; bottom:0; border-radius:4px; }
+.card { border: 0; border-radius: 1rem; box-shadow: 0 8px 25px rgba(74,32,24,.12); overflow: hidden; height: 100%; }
+.card-img-top { height: 230px; object-fit: cover; }
+.icon-number { width: 54px; height: 54px; border-radius: 50%; display:grid; place-items:center; background:var(--ouro); color:var(--vinho); font-weight:800; font-size:1.25rem; }
+.quote-box { background: #fff; border-left: 6px solid var(--terracota); padding: 1.5rem; border-radius: .5rem; }
+.timeline { border-left: 4px solid var(--ouro); margin-left: 1rem; padding-left: 2rem; }
+.timeline-item { position: relative; margin-bottom: 2rem; }
+.timeline-item::before { content:""; width:18px; height:18px; background:var(--vinho); border:4px solid var(--ouro); border-radius:50%; position:absolute; left:-2.72rem; top:.15rem; }
+.gallery-card img { height: 270px; width:100%; object-fit:cover; }
+.badge-theme { background: var(--terracota); color:white; }
+.btn-afro { background: var(--vinho); color:white; border-radius:2rem; padding:.65rem 1.4rem; }
+.btn-afro:hover { background:var(--terracota); color:white; }
+.accordion .card-header { background:#fff; }
+.accordion .btn-link { color:var(--vinho); font-weight:700; text-decoration:none; }
+.form-control:focus { border-color:var(--terracota); box-shadow:0 0 0 .2rem rgba(185,75,50,.2); }
+footer { background:#241016; color:#f8e9d4; }
+footer a { color:var(--ouro); }
+.skip-link { position:absolute; left:-9999px; top:0; z-index:9999; }
+.skip-link:focus { left:1rem; top:1rem; background:white; color:black; padding:.75rem; }
+@media (max-width: 767.98px) {
+  body { padding-top: 68px; }
+  .hero-slide { height: 68vh; min-height: 420px; }
+  .carousel-caption { bottom: 12%; }
+  .carousel-caption p { font-size:.95rem; }
+}
